@@ -60,5 +60,9 @@ public class Airport {
 		return true;
 	}
 
+	@Override
+	public String toString() {
+		return "Airport [id=" + id + ", name=" + name + "]";
+	}
 
 }
