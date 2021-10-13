@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Test Form</title>
+</head>
+<body>
+	<div>
+		<form target="_blank"
+			onsubmit="try {return window.confirm(&quot;You are submitting information to an external page.\nAre you sure?&quot;);} catch (e) {return false;}">
+			<table>
+				<tr height="40">
+					<td width="30%" align="right"><strong>First name: </strong></td>
+					<td width="65%"><input name="firstname" type="text"></td>
+				</tr>
+				<tr height="40">
+					<td width="30%" align="right"><strong>Last name: </strong></td>
+					<td width="65%">
+					<input name="lastname" type="text"></td>
+				</tr>
+				<tr height="40">
+					<td width="30%" align="right"><strong>Gender: </strong></td>
+					<td width="65%">
+					<input name="gender" type="radio" value="Male" 	id ="male"> Male 
+					<input name="gender" type="radio" value="Female" id ="female">Female</td>
+				</tr>
+				<tr height="40">
+					<td width="30%" align="right"><strong>Years of 	Experience: </strong></td>
+					<td width="65%"><span style="margin-right: 8px">
+					<input  name="exp" type="radio" value="1"  id="exp1">1</span>
+					<span style="margin-right: 8px">
+					<input name="exp" type="radio" value="2"  id="exp2">2</span> 
+					<span  style="margin-right: 8px">
+					<input name="exp" type="radio" value="3"  id="exp3" id="exp1">3</span> 
+					<span  style="margin-right: 8px">
+					<input name="exp" type="radio" value="4"  id="exp4">4</span> 
+					<span  style="margin-right: 8px">
+					<input name="exp" type="radio" value="5" id="exp5">5</span> 
+					<span  style="margin-right: 8px">
+					<input name="exp" type="radio" value="6"  id="exp6">6</span> 
+					<span  style="margin-right: 8px">
+					<input name="exp" type="radio" value="7" id="exp7">7</span> 
+				</tr>
+				<tr height="40">
+					<td width="30%" align="right"><strong>Date: </strong></td>
+					<td width="65%">
+					<input type="text" name="doj"></td>
+				</tr>
+				<tr height="40">
+					<td width="30%" align="right"><strong>Profession: </strong></td>
+					<td width="65%"><span style="margin-right: 8px">
+					<input  name="profession" type="checkbox" value="Manual Tester" id="mt"> Manual Tester </span> 
+					<span style="margin-right: 8px">
+					<input  name="profession" type="checkbox" value="Automation Tester" id="at"> Automation Tester </span></td>
+				</tr>
+				<tr height="40">
+					<td width="30%" align="right"><strong>Flavours of Selenium: </strong></td>
+					<td width="65%"> 
+					<input name="tool" type="checkbox" id="ide" value="ide"> Selenium IDE   
+					<input name="tool" type="checkbox" id="web" value="webdriver"> Selenium Webdriver
+					<input name="tool" type="checkbox" id="grid" value="grid"> Selenium Grid 
+				</td>
+				</tr>
+				<tr height="40">
+					<td width="30%" align="right"><strong>Continents: </strong></td>
+					<td width="65%"><select name="continents" id="cont">
+							<option id="1">Asia</option>
+							<option id="2">Europe</option>
+							<option id="3">Africa</option>
+							<option id="4">Australia</option>
+							<option id="5">South America</option>
+							<option id="6">North America</option>
+							<option id="7">Antartica</option>
+					</select></td>
+				</tr>
+				<tr height="40">
+					<td width="30%" align="right" valign="top">
+					<strong>Selenium Commands: </strong></td>
+					<td width="65%">
+					<select multiple name="selenium_commands" id="cmd">
+							<option id="c1">Browser Commands</option>
+							<option id="c2">Navigation Commands</option>
+							<option id="c3">Switch Commands</option>
+							<option id="c4">Wait Commands</option>
+							<option id="c5">WebElement Commands</option>
+					</select></td>
+				</tr>
+				<tr height="40">
+					<td width="30%" align="right"></td>
+					<td width="65%"><button name="submit">Button</button></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>

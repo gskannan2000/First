@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<title>Login</title>
+<style>
+td {
+	padding: 5px;
+}
+</style>
+<script>
+	function valid() {
+		alert("Helo");
+	}
+</script>
+</head>
+<body>
+	<div align="center">
+		<h1>Login</h1>
+		<form action="_blank">
+			<table>
+				<tr>
+					<td>Username :</td>
+					<td><input type="text" name="username" class="form-control"  
+						id="user_name" /></td>
+						
+				</tr>
+				<tr>
+					<td>Password:</td>
+					<td><input type="password" name="password" class="submit"
+						class="form-control" id="pass_word" /></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+					<input type="submit" id="submit" value="Login" class="btn-primary btn-lg" onClick="return alert('You Login');">
+				</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">   <a href="resetpwd.html">Forgot Password</a> 	</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>
